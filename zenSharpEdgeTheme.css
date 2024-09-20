@@ -5,6 +5,7 @@
     border-radius: 0px !important;
     transform: translate3d(0, 0, 0);
     position: relative;
+    margin: 0px !important;
     --zen-webview-correction-margin: -1px;
     margin-left: var(--zen-webview-correction-margin);
     margin-top: var(--zen-webview-correction-margin);
@@ -30,11 +31,18 @@
   }
 }
 
+/* Makes the grid line thinner */
+#tabbrowser-tabpanels:has(> [zen-split="true"]) {
+  background-color: var(--zen-colors-border) !important;
+  display: grid;
+  row-gap: 1px !important;
+  column-gap: 1px !important;
+}
+
 /* Makes the Sidebar A box */
 #zen-sidebar-web-panel-wrapper {
     margin: 0px !important;
-    padding-right: 1px !important;
-    border-right: 1px solid var(--zen-colors-border) !important;
+    padding-right: 0px !important;
 }
 
 #zen-sidebar-web-panel {
