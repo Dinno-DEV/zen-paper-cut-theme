@@ -42,7 +42,8 @@
 /* Makes the Sidebar A box */
 #zen-sidebar-web-panel-wrapper {
     margin: 0px !important;
-    padding-right: 0px !important;
+    padding-right: 1px !important;
+    border-right: 1px solid var(--zen-colors-border) !important;
 }
 
 #zen-sidebar-web-panel {
@@ -51,6 +52,7 @@
 }
 
 #zen-sidebar-web-panel-wrapper:has(#zen-sidebar-web-panel[hidden="true"]) {
+    padding: 0px !important;
     border-right: 0px none var(--zen-colors-border) !important;
 }
 
@@ -92,7 +94,17 @@
     border-left: 1px solid var(--zen-colors-border) !important;
 }
 
+@media (-moz-bool-pref: "zen.themes.tabs.legacy-location"){
+    #navigator-toolbox {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+}
+
 @media (-moz-bool-pref: "zen.view.compact") {
+    #navigator-toolbox {
+        padding: var(--zen-compact-toolbox-margin) !important;
+    }
     #navigator-toolbox:not([zen-expanded="true"]) {
         border-right: 0px none transparent !important;
     }
