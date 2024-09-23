@@ -82,7 +82,7 @@
   z-index: 2 !important;
   margin: 0 !important;
   border-right: 1px solid var(--zen-colors-border) !important;
-  padding: 1px !important;
+  padding: 0px !important;
 }
 
 #zen-sidebar-web-panel {
@@ -106,7 +106,7 @@
 /* Make tab bar BOXY */
 #navigator-toolbox {
   border-radius: 0px !important;
-  padding-bottom: 6px !important;
+  padding-bottom: 0 6px !important;
 }
 
 #navigator-toolbox:not([zen-expanded="true"]) {
